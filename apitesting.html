@@ -41,13 +41,15 @@
 
 
 
-        .fun{
+        .fun {
 
 
 
-             background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #fc4a1a);
+            background: #fc4a1a;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #f7b733, #fc4a1a);
         }
     </style>
 
@@ -65,7 +67,7 @@
                 .then(data => {
                     console.log(data);
 
-                    document.getElementsByTagName('h2')[0].innerHTML = `🤖 ${data.activity} 🤖`;
+                    document.getElementsByTagName('p')[0].innerHTML = `🤖 ${data.activity} 🤖`;
                     document.getElementById('bot').classList.add('fun');
                 });
 
@@ -83,12 +85,14 @@
 </head>
 
 <body>
-
-    <div id="bot">
+<main id="bot">
+   
         <h1>🤖Bored Boat🤖</h1>
-        <h2>Find Something To Do.</h2>
+        <p aria-live="polite">Find Something To Do.</p>
         <button onClick="api()">Click me to find something to DO!!</button>
-    </div>
+    
+
+    </main>
 </body>
 
 </html
