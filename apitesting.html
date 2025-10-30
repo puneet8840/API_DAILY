@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+    <style>
+        h1::first-letter {
+
+            font-size: 100px;
+            color: green;
+        }
+
+        #bot {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            align-items: center;
+            background-color: blueviolet;
+            background-repeat: no-repeat;
+            width: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            width: 150px;
+            height: 150px;
+            border-color: darkorange;
+            border-style: solid;
+            border-radius: 70%;
+            transition: .5s ease-out;
+
+        }
+
+        button:hover {
+
+            cursor: help;
+            background-color: aquamarine;
+        }
+    </style>
+
+
+
+
+    <script>
+
+
+
+        function api() {
+
+            fetch('https://apis.scrimba.com/bored/api/activity')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+
+                    document.getElementsByTagName('h2')[0].innerHTML = `🤖 ${data.activity} 🤖`;
+                });
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <div id="bot">
+        <h1>🤖Bored Boat🤖</h1>
+        <h2>Find Something To Do.</h2>
+        <button onClick="api()">Click me to find something to DO!!</button>
+    </div>
+</body>
+
+</html
