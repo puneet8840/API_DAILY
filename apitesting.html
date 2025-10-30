@@ -37,6 +37,18 @@
             cursor: help;
             background-color: aquamarine;
         }
+
+
+
+
+        .fun{
+
+
+
+             background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7b733, #fc4a1a);
+        }
     </style>
 
 
@@ -51,9 +63,10 @@
             fetch('https://apis.scrimba.com/bored/api/activity')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data)
+                    console.log(data);
 
                     document.getElementsByTagName('h2')[0].innerHTML = `🤖 ${data.activity} 🤖`;
+                    document.getElementById('bot').classList.add('fun');
                 });
 
         }
