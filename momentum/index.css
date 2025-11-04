@@ -1,0 +1,157 @@
+*{
+
+    box-sizing: border-box;
+}
+
+html, body{
+
+    height:100%;
+}
+
+html {
+
+    padding: 5px;
+
+}
+
+body {
+
+
+    color: white;
+    text-shadow: 1px 1px 2px #d61616;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    
+
+}
+
+/* 
+main #author{
+
+    position: absolute;
+    bottom:4px;
+    left: 4px;
+} */
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0px;
+    padding: 0px;
+
+
+
+
+
+
+}
+main div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.item {
+    width: 100%;
+    flex: 1;
+    /* border: 2px solid red; */
+}
+
+main h2{
+
+    text-align: center;
+    overlay: multiply;
+}
+
+#cryptos{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+
+}
+#crypto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+#currency{
+/* height: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap:0px;
+    
+}
+#currency p{
+    margin-top: 0px;
+}
+
+
+#author{
+
+    display: flex;
+    flex-direction:row;
+    align-items: end;
+
+
+}
+
+/* #auth{
+
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+} */
+#weather-icon{
+
+    width: 90px;
+    height: 90px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#weather #icon-temp{
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+margin-top: 0px;
+gap:0.1px;
+
+}
+
+#weather{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+#city{
+
+    margin-top: 0px;
+    margin-bottom: 0px;;
+}
+
+#time{
+
+    font-size: 100px;
+}

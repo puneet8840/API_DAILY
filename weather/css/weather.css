@@ -1,0 +1,36 @@
+#tempbox{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+align-items: center;
+background-color: #fc4a1a;
+gap: 20px;
+border-radius: 50%;
+}
+main{
+width: 50%;
+height: 30%;
+    margin-top: 60px;
+    position: relative;
+    left:25%;
+    
+}
+footer{
+
+    margin-top: 10px;
+}
+
+button{
+
+    background-color: blueviolet;
+    transition: 0.2s ease-in;
+
+}
+
+button:hover{
+
+    transform: translate(2px,2px);
+    background-color: aquamarine;
+}
